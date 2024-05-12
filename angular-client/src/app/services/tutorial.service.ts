@@ -2,8 +2,9 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Tutorial } from '../models/tutorial.model';
+import { environment } from 'src/environments/environment';
 
-const baseUrl = 'https://149da5f6-59e6-4a3c-8be3-d90efe4eed70-00-1j0qsa1fpn7h4.pike.replit.dev/api/tutorials';
+const baseUrl = environment.host;
 
 @Injectable({
   providedIn: 'root'

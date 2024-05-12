@@ -15,12 +15,25 @@
 
       <div class="form-group">
         <label for="description">Description</label>
-        <input
+        <textarea
           class="form-control"
           id="description"
           required
           [(ngModel)]="tutorial.description"
+          maxlength="1024"
           name="description"
+        ></textarea>
+        <p class="text-right" *ngIf="tutorial.description && tutorial.description.length > 0">Characters: {{tutorial.description.length}}/1024</p>
+      </div>
+
+      <div class="form-group">
+        <label for="url">Url</label>
+        <input
+          class="form-control"
+          id="url"
+          required
+          [(ngModel)]="tutorial.url"
+          name="url"
         />
       </div>
 

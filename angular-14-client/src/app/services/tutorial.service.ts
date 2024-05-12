@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Tutorial } from '../models/tutorial.model';
 
-const baseUrl = 'http://localhost:8080/api/tutorials';
+const baseUrl = 'https://149da5f6-59e6-4a3c-8be3-d90efe4eed70-00-1j0qsa1fpn7h4.pike.replit.dev/api/tutorials';
 
 @Injectable({
   providedIn: 'root'
